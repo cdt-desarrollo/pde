@@ -1,394 +1,353 @@
-*{
-  font-family: 'Plus Jakarta Sans', sans-serif;
-  margin: 0;
+* {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin: 0
 }
-html{
-  scroll-behavior: smooth;
+p{
+  font-size: 17px;
 }
-button{
-  box-shadow: 4px 4px #09506D;
+h1{
+  font-size: 40px;
 }
-
+h3{
+  font-size: 20px
+}
 
 /* Header */
-.headerDiv{
-  background-color: #18B8EC;
-  padding: 20px ;
+header {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
+  padding: 30px 0 30px 0;
   align-items: center;
-  position: sticky
+  background-color: #ebf5fa;
 }
-.headerDiv>img{
-  height: 80px;
+.headerDiv1 {
+  width: 40%;
 }
-.headerDiv>button{
-  background-color: white;
-  color: #09506D;
-  outline: 1px solid #09506D;
+.headerDiv1Img1 {
+  width: 60%;
+  cursor: pointer;
+}
+.headerDiv2 {
+  display: flex;
+  align-items: center;
+  margin-right: 2%;
+}
+.headerDiv2H31 {
+  margin-right: 5%;
+  color: #154E6B;
+  cursor: pointer;
+}
+.headerDiv2Div1 {
+  margin: 0;
+}
+.headerDiv2Div1Img {
+  width: 30%;
+  cursor: pointer;
+}
+.headerA1{
+  margin-right: 5%;
+  text-decoration: none;
+}
+.headerA1H31 {
+  color: #154E6B;
+  cursor: pointer;
+}
+.headerA2{
+  text-decoration: none;
+}
+.headerA2H32 {
+  color: #154E6B;
+  cursor: pointer;
+}
+/* Header */
+
+/* Explicación */
+.explicacionDiv1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 80px 0 50px 0;
+}
+.explicacionDiv1Div1 {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  align-items: center;
+  justify-content: center;
+}
+.explicacionDiv1Div1Div1 {
+  margin: 0;
+}
+.explicacionDiv1Div1Div1H11 {
+  color: #2486B7;
+}
+.explicacionDiv1Div1Div1H12 {
+  color: #2486B7;
+}
+.explicacionDiv1Div1Div1H13 {
+  color: #2486B7;
+}
+.explicacionDiv1Div1Div2 {
+  margin: 40px 0 40px 0;
+}
+.explicacionDiv1Div1Div2P1 {
+  color: #154E6B;
+  margin-bottom: 0;
+}
+.explicacionDiv1Div1Div2P2 {
+  color: #154E6B;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.explicacionDiv1Div1Div2P3 {
+  color: #154E6B;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.explicacionDiv1Div1Div2P4 {
+  color: #154E6B;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.explicacionDiv1Div1Div2P5 {
+  color: #154E6B;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.explicacionDiv1Div1Div2P6 {
+  color: #154E6B;
+  margin-top: 0;
+}
+.explicacionDiv1Div1Div3 {
+  margin: 0;
+}
+.explicacionDiv1Div1Div3Button1 {
+  height: 50px;
+  width: 280px;
+  color: white;
+  background-color: #2486B7;
   border: none;
   border-radius: 10px;
-  width: 150px;
-  height: 40px;
+  font-size: 100%;
   cursor: pointer;
-  transition: 0.4s;
 }
-.headerDiv>button:focus{
-  background-color: #09506D;
-  color: white;
+.explicacionDiv1Div2 {
+  width: 40%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+.explicacionDiv1Div2Img1 {
+  width: 80%;
+}
+/* Explicación */
 
-/* Section Title */
-.sectionTitleDiv{
+/* Proceso */
+.procesoDiv1 {
+  margin-bottom: 30px;
+}
+.procesoDiv1Div1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.procesoDiv1Div1H11 {
+  color: #154E6B;
+}
+.procesoDiv2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.procesoDiv2Div1 {
   display: flex;
   flex-wrap: wrap;
-  background-color: #09506D;
-  height: 200px;
-  align-content: center;
-  justify-content: center;
-}
-.sectionTitleDiv>h1{
-  font-size: 29px;
-  width: 500px;
-  text-align: center;
-  color: white;
-}
-
-/* Section Explanation */
-.sectionExplanationDivLogo{
-  padding-top: 60px;
-  padding-bottom: 60px;
-  display: flex;
-  align-content: center;
-  justify-content: center;
-}
-.sectionExplanationDivLogo>img{
-  height: 130px;
-}
-.sectionExplanationDivText{
-  display: flex;
-  gap: 50px;
-  align-content: center;
-  justify-content: center;
-}
-.sectionExplanationDivText>p{
-  width: 400px;
-  text-align: justify;
-}
-.sectionExplanationDivButton{
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-.sectionExplanationDivButton>button{
-  padding: 20px;
-  width: 280px;
-  border-radius: 10px;
-  border-color: none;
-  color: white;
-  background-color: #18B8EC;
-  border: none;
-  cursor: pointer;
-  transition: 0.6s;
-}
-.sectionExplanationDivButton>button:hover{
-  background-color: white;
-  color: #09506D;
-  outline: 1px solid #09506D;
-}
-
-/* Section Challenges */
-.sectionChallenges{
-  background-color: #09506D;
-  padding-bottom: 40px;
-}
-.sectionChallengesTitle{
-  display: flex;
-  justify-content: center;
-  padding: 20px;
-  color: white;
-}
-.sectionChallengesExplanation{
-  display: flex;
-  gap:20px;
-  align-content: center;
-  justify-content: center;
-}
-.sectionChallengesExplanation>div>p{
-  display: flex;
-  width: 400px;
-  text-align: justify;
+  width: 75%;
   align-items: center;
+  justify-content: center;
+
 }
-.sectionChallengesExplanationChallenge1{
+.procesoDiv2Div1>div {
+  width: 100%;
+  height: 220px;
+  background-color: #ebf5fa;
+  /* outline: 1px solid black; */
+  flex: 1 0 20%;
+  margin: 10px;
+  border-radius: 5px;
+}
+.procesoDiv2Div1Div1 {
+  display: block;
+}
+.procesoDiv2Div1Div1Div1,
+.procesoDiv2Div1Div2Div1,
+.procesoDiv2Div1Div3Div1,
+.procesoDiv2Div1Div4Div1,
+.procesoDiv2Div1Div5Div1,
+.procesoDiv2Div1Div6Div1,
+.procesoDiv2Div1Div7Div1,
+.procesoDiv2Div1Div8Div1 {
+  height: 100%;
   display: flex;
   flex-direction: column;
-  background-color: #BFF1FF;
-  border-radius: 10px;
-  width: 500px;
   align-items: center;
-}
-.sectionChallengesExplanationChallenge2{
-  display: flex;
-  flex-direction: column;
-  background-color: #8FE7FF;
-  border-radius: 10px;
-  width: 500px;
-  align-items: center;
-}
-.sectionChallengesExplanationChallenge1>h1, .sectionChallengesExplanationChallenge2>h1{
-  display: flex;
   justify-content: center;
-  padding-top: 20px;
 }
-.sectionChallengesExplanationChallenge1>p, .sectionChallengesExplanationChallenge2>p{
-  height: 250px;
+.procesoDiv2Div1Div1Div1>h1,
+.procesoDiv2Div1Div2Div1>h1,
+.procesoDiv2Div1Div3Div1>h1,
+.procesoDiv2Div1Div4Div1>h1,
+.procesoDiv2Div1Div5Div1>h1,
+.procesoDiv2Div1Div6Div1>h1,
+.procesoDiv2Div1Div7Div1>h1,
+.procesoDiv2Div1Div8Div1>h1 {
+  font-size: 40px;
+  margin-bottom: 5%;
+  color: #2486B7;
 }
-.sectionChallengesExplanationChallenge1>button, .sectionChallengesExplanationChallenge2>button{
-  border: none;
-  outline: 1px solid #09506D;
-  border-radius: 10px;
-  color: #09506D;
-  background-color: white;
-  cursor: pointer;
+.procesoDiv2Div1Div1Div1>p,
+.procesoDiv2Div1Div2Div1>p,
+.procesoDiv2Div1Div3Div1>p,
+.procesoDiv2Div1Div4Div1>p,
+.procesoDiv2Div1Div5Div1>p,
+.procesoDiv2Div1Div6Div1>p,
+.procesoDiv2Div1Div7Div1>p,
+.procesoDiv2Div1Div8Div1>p {
+  color: #2486B7;
+}
+/* Proceso */
+
+/* Alcance */
+.alcanceDiv1{
+  display: block;
+  margin-top: 40px;
   margin-bottom: 20px;
-  padding:20px;
-  width: 200px;
-  transition: 0.6s;
 }
-.sectionChallengesExplanationChallenge1>button:hover, .sectionChallengesExplanationChallenge2>button:hover{
-  background-color: #09506D;
-  color: white;
-}
-
-/* Section Register */
-.sectionRegisterTitle{
-  padding-top: 80px;
+.alcanceDiv1Div1{
   display: flex;
-  gap: 60px;
+  align-items: center;
+  justify-content: center;
+}
+.alcanceDiv1Div1H11{
+  color: #154E6B;
+}
+.alcanceDiv2Div1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.alcanceDiv2Div1Img1{
+  width: 70%;
+}
+/* Alcance */
+
+/* Colaboración */
+.colaboracionDiv1 {
+  display: block;
+  margin-top: 70px;
+}
+.colaboracionDiv1Div1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.colaboracionDiv1Div1Img1 {
+  width: 15%;
+}
+.colaboracionDiv2 {
+  display: block;
+  margin-top: 20px;
+}
+.colaboracionDiv2Div1 {
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.sectionRegisterButton>button{
-  border: none;
-  width: 400px;
-  border-radius: 10px;
-  background-color: white;
-  color: #18B8EC;
-  outline: 1px solid #18B8EC;
-  padding: 20px;
-  cursor: pointer;
-  transition: 0.6s;
+.colaboracionDiv2DivP1 {
+  color: #154E6B
 }
-.sectionRegisterButton>a>button{
-  border: none;
-  width: 700px;
-  border-radius: 10px;
-  background-color: #09506D;
-  color: white;
-  /* outline: 1px solid #18B8EC; */
-  padding: 20px;
-  cursor: pointer;
-  transition: 0.6s;
+.colaboracionDiv2DivP2 {
+  color: #154E6B
 }
-.sectionRegisterButton>button:hover{
-  background-color: #18B8EC;
-  color: white;
-}
-.sectionRegisterButton>a>button:hover{
-  background-color: white;
-  color: #09506D;
-  outline: 1px solid #09506D;
-}
-.sectionRegisterGoogleForms{
-  height: 100px;
-  /* background-color: blueviolet; */
-  text-align: center;
-  justify-items: center;
-  border: none
-}
+/* Colaboración */
 
-/* SectionLogos */
-.sectionLogos{
-  padding-top: 70px;
+/* Footer */
+.footerDiv1 {
+  display: block;
+  margin: 100px 0 100px 0
+}
+.footerDiv1Div1 {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
-.sectionLogosImages{
-  padding-top: 40px;
-  display: flex;
-  flex-direction: row;
-  gap: 40px;
-  padding-bottom: 60px;
-  align-items: center;
+.footerDiv1Div1Img1 {
+  width: 30%;
 }
-/* .sectionLogosImages>img{
-  height: 70px;
-} */
+/* Footer */
 
-
-@media only screen and (min-width: 1751px){
-  .logoNormal{
-    height: 55px;
+/* Media Queries */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  p{
+    font-size: 4px;
   }
-  .logoDifferent{
+  .procesoDiv2Div1 > div{
+    height: 60px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  p{
+    font-size: 6px;
+  }
+  .procesoDiv2Div1 > div{
     height: 100px;
   }
 }
-@media only screen and (max-width: 1750px) {
-  .logoNormal{
-    height: 50px;
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  p{
+    font-size: 10px;
   }
-  .logoDifferent{
-    height: 100px;
-  }
-  .swal2-html-container{
-    height: 700px;
-  }
-  .swal2-html-container>iframe{
-    width: 750px;
-    height: 2000px;
-  }
-}
-/* @media only screen and (max-width: 1580px){
-  .logoNormal{
-    height: 50px;
-  }
-  .logoDifferent{
-    height: 90px;
-  }
-} */
-@media only screen and (max-width: 1530px) {
-  .logoNormal{
-    height: 40px;
-  }
-  .logoDifferent{
-    height: 80px;
-  }
-  .swal2-html-container{
-    height: 700px;
-  }
-  .swal2-html-container>iframe{
-    width: 750px;
-    height: 700px;
-  }
-}
-/* @media only screen and (max-width: 1360px){
-  .logoNormal{
-    height: 40px;
-  }
-  .logoDifferent{
-    height: 80px;
-  }
-} */
-/* @media only screen and (max-width: 1300px) {
-  .sectionLogosImages>img{
-    height: 40px;
-  }
-} */
-@media only screen and (max-width: 1260px){
-  .logoNormal{
-    height: 30px;
-  }
-  .logoDifferent{
-    height: 70px;
-  }
-}
-@media only screen and (max-width: 1070px) {
-  .sectionExplanationDivText{
-    flex-direction: column;
-    align-items: center;
-  }
-  .sectionChallengesExplanation{
-    flex-direction: column;
-    align-items: center;
-  }
-  .logoNormal{
-    height: 30px;
-  }
-  .logoDifferent{
-    height: 60px;
-  }
-}
-@media only screen and (max-width: 990px){
-  .logoNormal{
-    height: 20px;
-  }
-  .logoDifferent{
-    height: 60px;
-  }
-}
-@media only screen and (max-width: 900px){
-  .logoNormal{
-    height: 20px;
-  }
-  .logoDifferent{
-    height: 60px;
-  }
-}
-@media only screen and (max-width: 770px){
-  .sectionLogosImages>img{
-    height: 20px;
-  }
-  .swal2-html-container{
-    height: 700px;
-  }
-  .swal2-html-container>iframe{
-    width: 650px;
-    height: 700px;
-  }
-}
-@media only screen and (max-width: 750px){
-  .headerDiv>img{
-    height: 40px;
-  }
-  .headerDiv>button{
-    height: 30px;
-    width: 100px;
-  }
-  .sectionExplanationDivText>p {
-    width: 300px;
-  }
-  .sectionExplanationDivButton>button{
-    width: 200px;
-  }
-  .sectionChallengesExplanationChallenge1, .sectionChallengesExplanationChallenge2{
-    width: 300px;
-  }
-  .sectionChallengesExplanation>div>p{
-    width: 200px;
-    font-size: small;
-  }
-  .sectionRegisterButton>button{
-    width: 200px;
-  }
-  .sectionRegisterButton>a>button{
-    width: 300px;
-  }
-  .sectionLogosImages{
-    height: 40px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .sectionTitleDiv>h1{
-    font-size: 20px;
-  }
-  .sectionExplanationDivLogo>img{
-    height: 60px;
-  }
-}
-@media only screen and (max-width: 375px){
-  .swal2-html-container{
-    height: 500px;
-  }
-  .swal2-html-container>iframe{
-    width: 250px;
-    height: 700px;
+  .procesoDiv2Div1 > div{
+    height: 140px;
   }
 }
 
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  p{
+    font-size: 13px;
+  }
+  .procesoDiv2Div1 > div{
+    height: 180px;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  p{
+    font-size: 17px;
+  }
+  .procesoDiv2Div1 > div{
+    height: 220px;
+  }
+}
+/* Media Queries */
+
+
+/* Original */
+/* p{
+  font-size: 17px;
+}
+h1{
+  font-size: 40px;
+}
+h3{
+  font-size: 20px
+} */
+/* Original */

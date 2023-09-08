@@ -1,155 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta property="og:title" content="Innovation for Sustainable Water" />
-  <meta property="og:description" content="¡Únete a nuestra misión de hacer del mundo un lugar más sustentable para todos! | Join our mission to make the world a more sustainable place for everyone!" />
-  <meta property="og:image" content="https://lh5.googleusercontent.com/7mzFcOuFI9N9AhpqVTbI3uOKdes81F4l1pXNlkRhac5NxufjTa-zG02LmMea9YfOPs8=w2400" />
-  <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans&display=swap" rel="stylesheet">
-  <link rel="shortcut icon" href="assets/faviconConvocatoria.png" type="image/x-icon">
-  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-  <script src="script.js"></script>
-  <title>Innovation for Sustainable Water</title>
+  <link rel="shortcut icon" href="./assets/iconoPDE.png" type="image/x-icon">
+  <link rel="stylesheet" href="./styles.css">
+  <title>PDE</title>
 </head>
+
 <body>
-  <header>
-    <div class="headerDiv">
-      <img src="assets/img/logoConvocatoriaBlanco.png" alt="">
-      <button onclick="toTranslate('e')" id="buttonToTranslateToEnglish">To English</button>
-      <button onclick="toTranslate('s')" id="buttonToTranslateToSpanish" style="display: none;">A Español</button>
+  <!-- Header -->
+  <section>
+    <header>
+      <div class="headerDiv1">
+        <img src="./assets/logoPDECompletoHorizontal.png" class="headerDiv1Img1">
+      </div>
+      <div class="headerDiv2" onclick="window.open('https://www.ccetijuana.org/','_blank')">
+        <h3 class="headerDiv2H31">CCE</h3>
+        <div class="headerDiv2Div1">
+          <img src="./assets/iconoRedireccionar.png" alt="" class="headerDiv2Div1Img">
+        </div>
+      </div>
+      <a href="#proceso" class="headerA1">
+        <h3 class="headerA1H31">Proceso</h3>
+      </a>
+      <a href="#alcance" class="headerA2">
+        <h3 class="headerA2H32">Alcance</h3>
+      </a>
+    </header>
+  </section>
+  <!-- Header -->
+  <!-- Explicación -->
+  <section>
+    <div class="explicacionDiv1">
+      <div class="explicacionDiv1Div1">
+        <div style="display: block;">
+          <div class="explicacionDiv1Div1Div1">
+            <h1 class="explicacionDiv1Div1Div1H11">Innovación,</h1>
+            <h1 class="explicacionDiv1Div1Div1H12">Crecimiento y</h1>
+            <h1 class="explicacionDiv1Div1Div1H13">Oportunidades</h1>
+          </div>
+          <div class="explicacionDiv1Div1Div2">
+            <p class="explicacionDiv1Div1Div2P1">La Política de Desarrollo Empresarial (PDE) de Baja</p>
+            <p class="explicacionDiv1Div1Div2P2">California es un conjunto de estrategias para</p>
+            <p class="explicacionDiv1Div1Div2P3">impulsar la competitivad económica del estado,</p>
+            <p class="explicacionDiv1Div1Div2P4">fortaleciendo industrias existentes, promoviendo</p>
+            <p class="explicacionDiv1Div1Div2P5">nuevas y creando un entorno empresarial</p>
+            <p class="explicacionDiv1Div1Div2P6">favorable.</p>
+          </div>
+          <div class="explicacionDiv1Div1Div3">
+            <button class="explicacionDiv1Div1Div3Button1" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLSc0Z6mnEODRl6J5Lmdk75sMxGvssRKLHpj8LJgaH3pAzGGuWg/viewform?usp=sf_link','_blank')">Comienza el Proceso</button>
+          </div>
+        </div>
+      </div>
+      <div class="explicacionDiv1Div2">
+        <img src="./assets/imagen1.png" alt="" class="explicacionDiv1Div2Img1">
+        <!-- https://docs.google.com/forms/d/e/1FAIpQLSc0Z6mnEODRl6J5Lmdk75sMxGvssRKLHpj8LJgaH3pAzGGuWg/viewform?usp=sf_link -->
+      </div>
     </div>
-    <div>
-    </div>
-  </header>
-  <main>
-    <section class="sectionTitle">
-      <div class="sectionTitleDiv">
-        <h1 id="spanishTitle">¡Únete a nuestra misión de hacer del mundo un lugar más sustentable para todos!</h1>
-        <h1 id="englishTitle" style="display: none;">Join our mission to make the world a more sustainable place for everyone!</h1>
-      </div>
-    </section>
-    <section class="sectionExplanation">
-      <div class="sectionExplanationDivLogo">
-        <img src="assets/img/logoConvocatoriaColores.png" alt="">
-      </div>
-      <div class="sectionExplanationDivText" id="explanationSpanish">
-        <p>Buscamos emprendedores, startups, empresas, organizaciones de la sociedad civil, instituciones educativas, centros de investigación y desarrollo, docentes, investigadores, estudiantes y démas organizaciones del ecosistema de innovación de los estados de California, Arizona, Baja California, Baja California Sur y Sonora, con soluciones tecnologicas sostenibles y asequibles que aborden el acceso al agua limpia y saneamiento.</p>
-        <p>¿Tienes una solución en TRL 6 o superior? ¡Participa y recibe retroalimentación del Comité Evaluador! Además, Rotoplas podría explorar posibles formas de colaboración para el desarrollo e implementación de la tecnología.</p>
-      </div>
-      <div class="sectionExplanationDivText" id="explanationEnglish" style="display: none;">
-        <p>We are looking for entrepreneurs, startups, companies, civil society organizations, educational institutions, research and development centers, teachers, researchers, students and other organizations in the innovation ecosystem of the states of California, Arizona, Baja California, Baja California Sur and Sonora. , with sustainable and affordable technological solutions that address access to clean water and sanitation.</p>
-        <p>Do you have a solution at TRL 6 or higher? Participate and receive feedback from the Evaluation Committee! In addition, Rotoplas could explore possible forms of collaboration for the development and implementation of the technology.</p>
-      </div>
-      <div class="sectionExplanationDivButton">
-        <!-- <button onclick="scrollToSectionRegister()" id="buttonPitchSpanish">
-          COMPÁRTENOS TU PITCH
-        </button>
-        <button onclick="scrollToSectionRegister()" id="buttonPitchEnglish" style="display: none;">
-          SHARE YOUR PITCH
-        </button> -->
-      </div>
-    </section>
-    <section class="sectionChallenges">
-      <div class="sectionChallengesTitle" id="challengesTitleSpanish">
-        <h1>
-          LOS DESAFIOS
+  </section>
+  <!-- Explicación -->
+  <!-- Proceso -->
+  <section id="proceso">
+    <div class="procesoDiv1">
+      <div class="procesoDiv1Div1">
+        <h1 class="procesoDiv1Div1H11">
+          Proceso
         </h1>
       </div>
-      <div class="sectionChallengesTitle" id="challengesTitleEnglish" style="display: none;">
-        <h1>
-          CHALLENGES
-        </h1>
-      </div>
-      <div class="sectionChallengesExplanation" id="challengesExplanationSpanish">
-        <div class="sectionChallengesExplanationChallenge1">
-          <h1>DESAFÍO 1</h1>
-          <p>
-            Propón un medio filtrante de bajo costo y sintetizado con reactivos seguros para una aplicación grado alimenticio que pueda utilizarse en un cartucho del sistema de purificación de Rotoplas y pueda incorporarse al tren de purificación de agua de ósmosis inversa. Este medio filtrante debe reducir la dureza del agua al retener las sales presentes; o bien, remover metales pesados.
-          </p>
-          <button onclick="moreInfoChallengesSpanish1()">
-            MÁS DETALLES
-          </button>
+    </div>
+    <div class="procesoDiv2">
+      <div class="procesoDiv2Div1">
+        <div class="procesoDiv2Div1Div1">
+          <div class="procesoDiv2Div1Div1Div1">
+            <h1>1</h1>
+            <p>Análisis del</p>
+            <p>capítulo local de la</p>
+            <p>PDE</p>
+          </div>
         </div>
-        <div class="sectionChallengesExplanationChallenge2">
-          <h1>DESAFÍO 2</h1>
-          <p>
-            Haz una propuesta para sistemas de tratamiento y reuso de aguas residuales domésticas que cumplan con la NOM-006-CONAGUA-2022, tengan una capacidad de hasta 2m3 de agua al día, y ocupen el menor espacio físico posible. También puedes proponer tecnologías o elementos que se puedan incorporar a cualquiera de las tres etapas del sistema para mejorar su rendimiento.
-          </p>
-          <button onclick="moreInfoChallengesSpanish2()">
-            MÁS DETALLES
-          </button>
+        <div class="procesoDiv2Div1Div2">
+          <div class="procesoDiv2Div1Div2Div1">
+            <h1>2</h1>
+            <p>Identificar industrias y</p>
+            <p>sectores</p>
+            <p>relacionados</p>
+          </div>
         </div>
-      </div>
-      <div class="sectionChallengesExplanation" style="display: none;" id="challengesExplanationEnglish">
-        <div class="sectionChallengesExplanationChallenge1">
-          <h1>CHALLENGE 1</h1>
-          <p>
-            Propose a low-cost filtration media synthesized with safe reagents for a food-grade application that can be used in a Rotoplas purification system cartridge and incorporated into the reverse osmosis water purification train. This filtration media should reduce water hardness by retaining present salts; or, remove heavy metals.
-          </p>
-          <button onclick="moreInfoChallengesEnglish1()">
-            MORE INFO
-          </button>
+        <div class="procesoDiv2Div1Div3">
+          <div class="procesoDiv2Div1Div3Div1">
+            <h1>3</h1>
+            <p>Identificar las vocaciones</p>
+            <p>que más aportan en cada</p>
+            <p>indicador</p>
+          </div>
         </div>
-        <div class="sectionChallengesExplanationChallenge2">
-          <h1>CHALLENGE 2</h1>
-          <p>
-            Make a proposal for treatment and reuse systems for domestic wastewater that comply with NOM-006-CONAGUA-2022, have a capacity of up to 2m3 of water per day, and occupy the least physical space possible. You can also propose technologies or elements that can be incorporated into any of the three stages of the system to improve its performance.
-          </p>
-          <button onclick="moreInfoChallengesEnglish2()">
-            MORE INFO
-          </button>
+        <div class="procesoDiv2Div1Div4">
+          <div class="procesoDiv2Div1Div4Div1">
+            <h1>4</h1>
+            <p>Identificar las industrias y</p>
+            <p>sectores más relacionados</p>
+            <p>con las vocaciones</p>
+          </div>
         </div>
-      </div>
-    </section>
-    <section class="sectionRegister" id="sectionRegister">
-      <div class="sectionRegisterTitle" id="registerSpanish">
-        <div>
-          <h1>¡PARTICIPA!</h1>
+        <div class="procesoDiv2Div1Div5">
+          <div class="procesoDiv2Div1Div5Div1">
+            <h1>5</h1>
+            <p>Dar conclusiones de</p>
+            <p>requerimientos</p>
+            <p>de proveeduría</p>
+          </div>
         </div>
-        <div class="sectionRegisterButton">
-          <button onclick="checkTheRulesSpanish()">CONSULTA LAS BASES</button>
+        <div class="procesoDiv2Div1Div6">
+          <div class="procesoDiv2Div1Div6Div1">
+            <h1>6</h1>
+            <p>Proponer</p>
+            <p>oportunidades de</p>
+            <p>inversión o de negocios</p>
+          </div>
         </div>
-        <div class="sectionRegisterButton">
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdTU4AGcdMyGOf6G2P2L7NbVjHdA0JnHgVyxknqSpj3FuvCyw/viewform?usp=sf_link" target="_blank">
-            <button>REGÍSTRATE AQUÍ</button>
-          </a>
+        <div class="procesoDiv2Div1Div7">
+          <div class="procesoDiv2Div1Div7Div1">
+            <h1>7</h1>
+            <p>Identificación</p>
+            <p>de</p>
+            <p>proyectos</p>
+          </div>
         </div>
-      </div>
-      <div class="sectionRegisterTitle" id="registerEnglish" style="display: none;">
-        <div>
-          <h1>APPLY!</h1>
-        </div>
-        <div class="sectionRegisterButton">
-          <button onclick="checkTheRulesEnglish()">CHECK THE RULES</button>
-        </div>
-        <div class="sectionRegisterButton">
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSdTU4AGcdMyGOf6G2P2L7NbVjHdA0JnHgVyxknqSpj3FuvCyw/viewform?usp=sf_link" target="_blank">
-            <button>APPLY HERE!</button>
-          </a>
+        <div class="procesoDiv2Div1Div8">
+          <div class="procesoDiv2Div1Div8Div1">
+            <h1>8</h1>
+            <p>Selección</p>
+            <p>evaluación y</p>
+            <p>presentación</p>
+          </div>
         </div>
       </div>
-    </section>
-    <section class="sectionLogos">
-      <div class="sectionLogosTitle" id="titleOrganizersSpanish">
-        <h1>ORGANIZADORES</h1>
+    </div>
+  </section>
+  <!-- Proceso -->
+  <!-- Alcance -->
+  <section id="alcance">
+    <div class="alcanceDiv1">
+      <div class="alcanceDiv1Div1">
+        <h1 class="alcanceDiv1Div1H11">Alcance de la PDE</h1>
       </div>
-      <div class="sectionLogosTitle" id="titleOrganizersEnglish" style="display: none;">
-        <h1>ORGANIZERS</h1>
+    </div>
+    <div class="alcanceDiv2">
+      <div class="alcanceDiv2Div1">
+        <img src="./assets/alcance.png" alt="" class="alcanceDiv2Div1Img1">
       </div>
-      <div class="sectionLogosImages">
-        <img src="assets/img/innwai.png" alt="" class="logoDifferent">
-        <img src="assets/img/bajainnova.png" alt="" class="logoNormal">
-        <img src="assets/img/ices.png" alt="" class="logoNormal">
-        <img src="assets/img/cdt.png" alt="" class="logoNormal">
-        <img src="assets/img/secretariaEconomia.png" alt="" class="logoNormal">
-        <img src="assets/img/fumec.png" alt="" class="logoNormal">
+    </div>
+  </section>
+  <!-- Alcance -->
+  <!-- Colaboracion -->
+  <section>
+    <div class="colaboracionDiv1">
+      <div class="colaboracionDiv1Div1">
+        <img src="./assets/logoCCECompleto.png" alt="" class="colaboracionDiv1Div1Img1">
       </div>
-    </section>
-  </main>
+    </div>
+    <div class="colaboracionDiv2">
+      <div class="colaboracionDiv2Div1">
+        <p class="colaboracionDiv2Div1P1">La PDE trabaja en colboración con el sector empresarial a través del Consejo Estatal Empresarial para beneficio de</p>
+        <p class="colaboracionDiv2Div1P2">los habitantes de Baja California</p>
+      </div>
+    </div>
+  </section>
+  <!-- Colaboración -->
+  <!-- Footer -->
+  <section>
+    <div class="footerDiv1">
+      <div class="footerDiv1Div1">
+        <img src="./assets/logoPDECompletoCentrado.png" alt="" class="footerDiv1Div1Img1">
+      </div>
+    </div>
+  </section>
+  <!-- Footer -->
 </body>
+
 </html>
