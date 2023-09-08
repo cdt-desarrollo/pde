@@ -25,7 +25,6 @@ header {
 }
 .headerDiv1Img1 {
   width: 60%;
-  cursor: pointer;
 }
 .headerDiv2 {
   display: flex;
@@ -264,10 +263,10 @@ header {
   align-items: center;
   justify-content: center;
 }
-.colaboracionDiv2DivP1 {
+.colaboracionDiv2Div1P1 {
   color: #154E6B
 }
-.colaboracionDiv2DivP2 {
+.colaboracionDiv2Div1P2 {
   color: #154E6B
 }
 /* Colaboración */
@@ -275,7 +274,9 @@ header {
 /* Footer */
 .footerDiv1 {
   display: block;
-  margin: 100px 0 100px 0
+  margin-top: 70px;
+  padding: 80px 0 80px 0;
+  background-color: #ebf5fa;
 }
 .footerDiv1Div1 {
   display: flex;
