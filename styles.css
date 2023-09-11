@@ -134,7 +134,7 @@ header {
   width: 40%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content:flex-end
 }
 .explicacionDiv1Div2Img1 {
   width: 80%;
@@ -262,9 +262,11 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  text-align: center;
 }
 .colaboracionDiv2Div1P1 {
-  color: #154E6B
+  color: #154E6B;
+  width: 90%;
 }
 .colaboracionDiv2Div1P2 {
   color: #154E6B
@@ -289,53 +291,101 @@ header {
 /* Footer */
 
 /* Media Queries */
-/* Extra small devices (phones, 600px and down) */
+/* Extra small devices (phones, 0px - 599px) */
 @media only screen and (max-width: 600px) {
   p{
-    font-size: 4px;
+    font-size: 14px;
   }
   .procesoDiv2Div1 > div{
-    height: 60px;
+    height: 160px;
+    flex: 1 0 60%;
+  }
+  .explicacionDiv1Div2{
+    display: none;
+  }
+  .headerDiv2, .headerA1, .headerA2{
+    display: none;
+  }
+  .headerDiv1Img1{
+    width: 160%;
+  }
+  .explicacionDiv1{
+    margin-top: 30px;
+  }
+  .headerDiv1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
+/* Small devices (portrait tablets and large phones, 600px - 767px) */
 @media only screen and (min-width: 600px) {
   p{
-    font-size: 6px;
+    font-size: 12px;
   }
   .procesoDiv2Div1 > div{
-    height: 100px;
+    height: 120px;
+    flex: 1 0 40%;
+  }
+  .explicacionDiv1Div2{
+    display: none;
+  }
+  .headerDiv2, .headerA1, .headerA2{
+    display: none;
+  }
+  .headerDiv1Img1{
+    width: 100%;
   }
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
+/* Medium devices (landscape tablets, 768px - 991px) */
 @media only screen and (min-width: 768px) {
   p{
-    font-size: 10px;
+    font-size: 13px;
   }
   .procesoDiv2Div1 > div{
     height: 140px;
+    flex: 1 0 30%;
+  }
+  .explicacionDiv1Div2{
+    display: flex;
+  }
+  .headerA1, .headerA2{
+    display: block;
+  }
+  .headerDiv2{
+    display: flex;
+  }
+  .headerDiv1Img1{
+    width: 80%;
   }
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
+/* Large devices (laptops/desktops, 992px - 1199px) */
 @media only screen and (min-width: 992px) {
   p{
     font-size: 13px;
   }
   .procesoDiv2Div1 > div{
     height: 180px;
+    flex: 1 0 20%;
+  }
+  .explicacionDiv1Div2{
+    display: flex;
   }
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* Extra large devices (large laptops and desktops, 1200px - infinite px) */
 @media only screen and (min-width: 1200px) {
   p{
     font-size: 17px;
   }
   .procesoDiv2Div1 > div{
     height: 220px;
+  }
+  .explicacionDiv1Div2{
+    display: flex;
   }
 }
 /* Media Queries */
